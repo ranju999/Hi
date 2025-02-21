@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Now</title>
+    <link rel="stylesheet" href="https://ranju999.github.io/Hi/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Scan the QR Code or Use the UPI ID:</h2>
+        <div class="qr-card">
+            <img src="https://envs.sh/d8J.jpg" alt="QR Code">
+        </div>
+        <p class="upi-id">TechifyBots@UPI</p>
+        <button class="copy-btn" onclick="copyUPI()">Copy</button>
+        <p class="paytm-logo">paytm</p>
+        <a href="#" class="paypal-link">Donate via PayPal? Click Here</a>
+    </div>
+
+    <script>
+        function copyUPI() {
+            navigator.clipboard.writeText("TechifyBots@UPI");
+            alert("UPI ID Copied!");
+        }
+    </script>
+</body>
+</html>
